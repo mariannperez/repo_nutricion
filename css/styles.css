@@ -1,0 +1,421 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+body{
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 3rem;
+    
+}
+/**Encabezado**/
+h1{
+    color: green;
+    font-style:oblique;
+    font-weight: 500; 
+    font-family: 'Amatic SC', cursive;
+    text-align:center;
+    font-size: 80px; top: 0%;
+    background-color: rgb(204,252,203);
+    
+}
+
+
+
+/**Menú de navegación**/
+
+header{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center; 
+    background-color: rgb(255, 255, 255);
+}
+
+#menu{
+     background-color: white;
+     text-align:center;
+     font-family: 'Comfortaa'; 
+     font-size:15px;
+    
+    }
+
+ul{
+   list-style-type:none;
+
+}
+       
+a{
+  color: black;text-decoration:none;
+}
+
+.menuNavegacion{
+    display: flex;
+    gap: 20px;
+    text-align: end;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.menuNavegacion li a:hover{
+    color: rgb(88, 146, 92);
+    font-size: 17px;
+}
+
+
+/**Footer**/
+
+footer{
+    color: rgb(6, 75, 4);
+    font-weight: bolder;
+    font-style:normal; 
+    font-family: 'Comfortaa';
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+   
+/**Logo**/
+
+.resizeLogo{ 
+    width: 100px;
+    height: 100px;
+
+}
+
+    
+     
+/**Banner**/
+
+.banner{
+    background-color: rgb(204,252,203);
+     margin-top: 10% ;
+    }
+
+
+
+     
+/** Quien Soy **/
+
+h2{
+    color:rgb(86,130,89);
+     font-family: 'Comfortaa'; 
+     font-size: 50px; 
+     text-align: center;
+     margin-top: 5%;
+    }
+    
+p{
+    color: black; 
+    font-size: 25px; 
+    font-family: 'Comfortaa',cursive; 
+    text-align:justify;
+    margin-top: 2%;
+    margin-right:2% ;
+    margin-left: 2%;
+}
+
+.fotoBio{
+    width: 200px; 
+    height: 300px; 
+    margin-top: 0%;
+    margin-left: 10%;
+    
+}
+
+/** Recetario**/
+
+h3{
+    color: rgb(86,130,89);
+}
+
+#ingredientes{
+    background-color:rgb(244, 255, 244);
+     text-align:center;
+     font-family: 'Comfortaa'; 
+     font-size:25px;
+     margin-top: 5%;
+    }
+    
+
+ul{
+    list-style-type:none;
+}
+       
+a{
+    color: black;
+    text-decoration:none;
+}
+
+li{
+    list-style: none;
+}
+
+#preparacion{
+    background-color:rgb(244, 255, 244);
+     text-align:center;font-family: 'Comfortaa'; 
+     font-size: 25px;
+     margin-top: 5%;
+    }
+    
+
+ul{
+    list-style-type:none;
+}
+       
+a{
+    color: black;
+    text-decoration:none;
+}
+
+.cremaPalta{
+    width: 400px; 
+    height: 450px; 
+    margin-top: 5%;
+    margin-left: 35%;
+    align-items: center;
+    display: flex;
+}
+
+
+    /**Contacto**/
+#contacto{
+    color: rgb(0, 0, 0);
+    background-color: rgb(155, 212, 155);
+    font-size: 25px;
+    text-align: center;
+}
+
+form{ 
+    font-family: 'Comfortaa';
+}
+
+
+/** Planes y servicios con box modeling**/
+
+.card{
+    background-color:rgb(231, 255, 231);
+    width: 350px;
+    display: inline-block;
+    margin-top: 3cm;
+    margin-left: 55px;
+    padding: 3px;
+    border-radius: 5px;
+    
+
+    }
+
+
+.card__img{
+    width: 5cm;
+    height:5cm;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.card__title{
+   
+    font-size: 35px ;
+    color:rgb(88, 146, 92);
+    font-family: 'Comfortaa';
+    margin-top: 5%;
+    
+
+}
+
+.card__desc{
+    
+    font-size: 18px ;
+    color:rgb(0, 0, 0);
+    font-family: 'Comfortaa';
+    margin-top: 5%;
+    text-align: center;
+
+}
+
+.card__button{
+    color: black;
+    font-family: 'Comfortaa';
+    font-size: 20px;
+    display:block;
+    margin: 0 auto;
+
+}
+
+.cajaCards{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card:hover{
+    transform:rotateX(10deg);
+}
+
+/**grids**/
+
+/** el > * aplica solo para asignar lo mismo a hijos directos**/
+
+
+/** Contenedor de index**/
+.contenedor{
+    display: grid;
+    width: 100%;
+    height:100%;
+    grid-template-rows: 25% 30% 35% 10%;
+    grid-template-areas:
+    "header"
+    "main" 
+    "aside"
+    "footer";
+}
+
+
+.headerI{
+    grid-area: header;
+    background-color: rgb(255, 255, 255);
+}
+
+.mainI{
+    grid-area: main;
+    background-color: rgb(204,252,203);
+}
+
+.asideI{
+    grid-area: aside;
+    background-color: rgb(202, 236, 201);
+}
+
+.footerI{
+    grid-area: footer;
+    background-color: rgb(240, 255, 242);
+}
+
+
+/** responsive tablet**/
+
+@media (min-width:768px){
+    .contenedor{
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-rows: 25% 30% 35% 10%;
+        grid-template-areas:
+        "header"
+        "main" 
+        "aside"
+        "footer";
+    }
+    
+
+}
+
+
+
+/** responsive desktop**/
+
+@media (min-width:1024px){
+
+    .contenedor{
+        display: grid;
+        width: auto;
+        height: 100vh;
+        grid-template-rows: 25% 30% 35% 10%;
+        grid-template-areas:
+        "header"
+        "main" 
+        "aside"
+        "footer";
+    }
+    
+
+}
+
+/** Contenedor de Quien Soy**/
+
+.contenedorQS{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 12% 18% 50% 10%;
+    grid-template-areas:
+    "header header"
+    "main main"
+    "article aside"
+    "footer footer";
+}
+
+.headerQ{
+    grid-area: header;
+    
+}
+
+.mainQ{
+    grid-area: main;
+    background-color: rgb(204,252,203);
+    
+}
+
+.asideQ{
+    grid-area: aside;
+    margin-top: 10%;
+}
+
+.articleQ{
+    grid-area: article;
+    background-color: rgb(202, 236, 201);
+    margin-top: 10%;
+}
+
+.footerQ{
+    grid-area: footer;
+    
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+
+}
+
+/** responsive tablet**/
+
+@media (min-width:768px){
+    .contenedorQS{
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 12% 18% 50% 10%;
+    grid-template-areas:
+    "header header"
+    "main main"
+    "article aside"
+    "footer footer";
+    }
+    
+
+}
+
+
+
+/** responsive desktop**/
+
+@media (min-width:1024px){
+
+    .contenedorQS{
+        
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 25% 18% 45% 10%;
+        grid-template-areas:
+        "header header"
+        "main main"
+        "article aside"
+        "footer footer";
+        }
+        
+    
+
+}
+

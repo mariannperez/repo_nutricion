@@ -27,12 +27,7 @@ h1{
 
 /**Menú de navegación**/
 
-header{
-    display: flex;
-    justify-content:flex-start;
-    align-items: center; 
-    background-color: rgb(255, 255, 255);
-}
+
 
 #menu{
      background-color: white;
@@ -288,7 +283,7 @@ form{
 
 .asideI{
     grid-area: aside;
-    background-color: rgb(202, 236, 201);
+    background-color: rgb(255, 255, 255);
 }
 
 .footerI{
@@ -338,6 +333,7 @@ form{
 
 /** Contenedor de Quien Soy**/
 
+/** ESTE QUEDA SIN USAR POR EL BOOTSTRAP
 .contenedorQS{
     display: grid;
     grid-template-columns: 60% 40%;
@@ -347,7 +343,8 @@ form{
     "main main"
     "article aside"
     "footer footer";
-}
+} **/
+
 
 .headerQ{
     grid-area: header;
@@ -367,7 +364,7 @@ form{
 
 .articleQ{
     grid-area: article;
-    background-color: rgb(202, 236, 201);
+    background-color: rgb(194, 235, 193);
     margin-top: 10%;
 }
 
@@ -407,7 +404,7 @@ form{
     .contenedorQS{
         
         grid-template-columns: 70% 30%;
-        grid-template-rows: 25% 18% 45% 10%;
+        grid-template-rows: 20% 15% 45% 10%;
         grid-template-areas:
         "header header"
         "main main"
@@ -419,3 +416,6 @@ form{
 
 }
 
+.hamburguesa{
+    margin-left: 10px;
+}

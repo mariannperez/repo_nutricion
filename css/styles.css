@@ -1,363 +1,295 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
-
-body{
-    position: relative;
-    min-height: 100vh;
-    padding-bottom: 3rem;
-    
+body {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 3rem;
 }
+
 /**Encabezado**/
-h1{
-    color: green;
-    font-style:oblique;
-    font-weight: 500; 
-    font-family: 'Amatic SC', cursive;
-    text-align:center;
-    font-size: 80px; top: 0%;
-    background-color: rgb(204,252,203);
-    
+h1 {
+  color: green;
+  font-style: oblique;
+  font-weight: 500;
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+  font-size: 80px;
+  top: 0%;
+  background-color: rgb(204, 252, 203);
 }
-
 
 /**Menú de navegación**/
-
-
-
-#menu{
-     background-color: white;
-     text-align:center;
-     font-family: 'Comfortaa'; 
-     font-size:15px;
-    
-    }
-
-ul{
-   list-style-type:none;
-
-}
-       
-a{
-  color: black;text-decoration:none;
+#menu {
+  background-color: white;
+  text-align: center;
+  font-family: "Comfortaa";
+  font-size: 15px;
 }
 
-.menuNavegacion{
-    display: flex;
-    gap: 20px;
-    text-align: end;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: white;
+ul {
+  list-style-type: none;
 }
 
-.menuNavegacion li a:hover{
-    color: rgb(88, 146, 92);
-    font-size: 17px;
+a {
+  color: black;
+  text-decoration: none;
 }
 
+.menuNavegacion {
+  display: flex;
+  gap: 20px;
+  text-align: end;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+}
+
+.menuNavegacion li a:hover {
+  color: rgb(88, 146, 92);
+  font-size: 17px;
+}
 
 /**Footer**/
-
-footer{
-    color: rgb(6, 75, 4);
-    font-weight: bolder;
-    font-style:normal; 
-    font-family: 'Comfortaa';
-    position:absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+footer {
+  color: rgb(6, 75, 4);
+  font-weight: bolder;
+  font-style: normal;
+  font-family: "Comfortaa";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
-   
 /**Logo**/
-
-.resizeLogo{ 
-    width: 100px;
-    height: 100px;
-
+.resizeLogo {
+  width: 100px;
+  height: 100px;
 }
 
-    
-     
 /**Banner**/
-
-.banner{
-    background-color: rgb(204,252,203);
-     margin-top: 10% ;
-    
-    animation-name: cambiarColor;
-    animation-duration: 4s;
+.banner {
+  background-color: rgb(204, 252, 203);
+  margin-top: 10%;
+  animation-name: cambiarColor;
+  animation-duration: 4s;
 }
 
-@keyframes cambiarColor{
-    0% {
-        background-color: rgb(194, 235, 193);
-    }
-
-    100%{
-        background-color: rgb(155, 201, 155);
-    }
-
+@keyframes cambiarColor {
+  0% {
+    background-color: rgb(194, 235, 193);
+  }
+  100% {
+    background-color: rgb(155, 201, 155);
+  }
 }
-
-
-
-     
 /** Quien Soy **/
-
-h2{
-    color:rgb(50, 88, 53);
-     font-family: 'Comfortaa'; 
-     font-size: 50px; 
-     text-align: center;
-     margin-top: 5%;
-    }
-    
-p{
-    color: black; 
-    font-size: 25px; 
-    font-family: 'Comfortaa',cursive; 
-    text-align:justify;
-    margin-top: 2%;
-    margin-right:2% ;
-    margin-left: 2%;
+h2 {
+  color: rgb(50, 88, 53);
+  font-family: "Comfortaa";
+  font-size: 50px;
+  text-align: center;
+  margin-top: 5%;
 }
 
-.fotoBio{
-    width: 200px; 
-    height: 300px; 
-    margin-top: 0%;
-    margin-left: 10%;
-    
+p {
+  color: black;
+  font-size: 25px;
+  font-family: "Comfortaa", cursive;
+  text-align: justify;
+  margin-top: 2%;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+.fotoBio {
+  width: 200px;
+  height: 300px;
+  margin-top: 0%;
+  margin-left: 10%;
 }
 
 /** Recetario**/
-
-h3{
-    color: rgb(86,130,89);
+h3 {
+  color: rgb(86, 130, 89);
 }
 
-#ingredientes{
-    background-color:rgb(244, 255, 244);
-     text-align:center;
-     font-family: 'Comfortaa'; 
-     font-size:25px;
-     margin-top: 5%;
-    }
-    
-
-ul{
-    list-style-type:none;
-}
-       
-a{
-    color: black;
-    text-decoration:none;
+#ingredientes {
+  background-color: rgb(244, 255, 244);
+  text-align: center;
+  font-family: "Comfortaa";
+  font-size: 25px;
+  margin-top: 5%;
 }
 
-li{
-    list-style: none;
+ul {
+  list-style-type: none;
+}
+ul a {
+  color: black;
+  text-decoration: none;
+}
+ul a li {
+  list-style: none;
 }
 
-#preparacion{
-    background-color:rgb(244, 255, 244);
-     text-align:center;font-family: 'Comfortaa'; 
-     font-size: 25px;
-     margin-top: 5%;
-    }
-    
-
-ul{
-    list-style-type:none;
-}
-       
-a{
-    color: black;
-    text-decoration:none;
+#preparacion {
+  background-color: rgb(244, 255, 244);
+  text-align: center;
+  font-family: "Comfortaa";
+  font-size: 25px;
+  margin-top: 5%;
 }
 
-.cremaPalta{
-    width: 400px; 
-    height: 450px; 
-    margin-top: 5%;
-    margin-left: 35%;
-    align-items: center;
-    display: flex;
+ul {
+  list-style-type: none;
 }
 
-
-    /**Contacto**/
-#contacto{
-    color: rgb(0, 0, 0);
-    background-color: rgb(155, 212, 155);
-    font-size: 25px;
-    text-align: center;
+a {
+  color: black;
+  text-decoration: none;
 }
 
-form{ 
-    font-family: 'Comfortaa';
+.cremaPalta {
+  width: 400px;
+  height: 450px;
+  margin-top: 5%;
+  margin-left: 35%;
+  align-items: center;
+  display: flex;
 }
 
-.botonEnviar{
-    background-color: rgb(194, 235, 193);
-    color: black;
-    text-align: center;
+/**Contacto**/
+#contacto {
+  color: rgb(0, 0, 0);
+  background-color: rgb(155, 212, 155);
+  font-size: 25px;
+  text-align: center;
 }
 
+form {
+  font-family: "Comfortaa";
+}
+
+.botonEnviar {
+  background-color: rgb(194, 235, 193);
+  color: black;
+  text-align: center;
+}
 
 /** Planes y servicios con box modeling**/
-
-.card{
-    background-color:rgb(243, 243, 243);
-    width: 350px;
-    display: inline-block;
-    margin-top: 3cm;
-    margin-left: 55px;
-    padding: 3px;
-    border-radius: 5px;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-    
-    }
-
-    .card:hover{
-        box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
-        transform: translateY(-3%);
-    }
-
-
-.card__img{
-    width: 5cm;
-    height:5cm;
-    display: block;
-    margin: 0 auto;
-
+.card {
+  background-color: rgb(243, 243, 243);
+  width: 350px;
+  display: inline-block;
+  margin-top: 3cm;
+  margin-left: 55px;
+  padding: 3px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
 }
 
-.card__title{
-   
-    font-size: 35px ;
-    color:rgb(88, 146, 92);
-    font-family: 'Comfortaa';
-    margin-top: 5%;
-    
-
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+  color: black;
 }
 
-.card__desc{
-    
-    font-size: 18px ;
-    color:rgb(0, 0, 0);
-    font-family: 'Comfortaa';
-    margin-top: 5%;
-    text-align: center;
-
+.card__img {
+  width: 5cm;
+  height: 5cm;
+  display: block;
+  margin: 0 auto;
 }
 
-.card__button{
-    color: black;
-    font-family: 'Comfortaa';
-    font-size: 20px;
-    display:block;
-    margin: 0 auto;
-    text-align: center;
-    background-color: rgb(186, 218, 186);
-
+.card__title {
+  font-size: 35px;
+  color: rgb(88, 146, 92);
+  font-family: "Comfortaa";
+  margin-top: 5%;
 }
 
-.cajaCards{
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
+.card__desc {
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  font-family: "Comfortaa";
+  margin-top: 5%;
+  text-align: center;
 }
 
+.card__button {
+  color: black;
+  font-family: "Comfortaa";
+  font-size: 20px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgb(186, 218, 186);
+}
 
+.cajaCards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
 
 /**grids**/
-
 /** el > * aplica solo para asignar lo mismo a hijos directos**/
-
-
 /** Contenedor de index**/
-.contenedor{
-    display: grid;
-    width: 100%;
-    height:100%;
-    grid-template-rows: 25% 40% 35% 5%;
-    grid-template-areas:
-    "header"
-    "main" 
-    "aside"
-    "footer";
+.contenedor {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-rows: 25% 40% 35% 5%;
+  grid-template-areas: "header" "main" "aside" "footer";
 }
 
-
-.headerI{
-    grid-area: header;
-    background-color: rgb(255, 255, 255);
+.headerI {
+  grid-area: header;
+  background-color: rgb(255, 255, 255);
 }
 
-.mainI{
-    grid-area: main;
-    background-color: rgb(204,252,203);
+.mainI {
+  grid-area: main;
+  background-color: rgb(204, 252, 203);
 }
 
-.asideI{
-    grid-area: aside;
-    background-color: rgb(255, 255, 255);
+.asideI {
+  grid-area: aside;
+  background-color: rgb(255, 255, 255);
 }
 
-.footerI{
-    grid-area: footer;
-    background-color: rgb(240, 255, 242);
+.footerI {
+  grid-area: footer;
+  background-color: rgb(240, 255, 242);
 }
-
 
 /** responsive tablet**/
-
-@media (min-width:768px){
-    .contenedor{
-        display: grid;
-        width: 100%;
-        height: 100vh;
-        grid-template-rows: 25% 30% 35% 10%;
-        grid-template-areas:
-        "header"
-        "main" 
-        "aside"
-        "footer";
-    }
-    
-
+@media (min-width: 768px) {
+  .contenedor {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-rows: 25% 30% 35% 10%;
+    grid-template-areas: "header" "main" "aside" "footer";
+  }
 }
-
-
-
 /** responsive desktop**/
-
-@media (min-width:1024px){
-
-    .contenedor{
-        display: grid;
-        width: auto;
-        height: 100vh;
-        grid-template-rows: 25% 30% 35% 10%;
-        grid-template-areas:
-        "header"
-        "main" 
-        "aside"
-        "footer";
-    }
-    
-
+@media (min-width: 1024px) {
+  .contenedor {
+    display: grid;
+    width: auto;
+    height: 100vh;
+    grid-template-rows: 25% 30% 35% 10%;
+    grid-template-areas: "header" "main" "aside" "footer";
+  }
 }
-
 /** Contenedor de Quien Soy**/
-
 /** ESTE QUEDA SIN USAR POR EL BOOTSTRAP
 .contenedorQS{
     display: grid;
@@ -369,78 +301,52 @@ form{
     "article aside"
     "footer footer";
 } **/
-
-
-.headerQ{
-    grid-area: header;
-    
+.headerQ {
+  grid-area: header;
 }
 
-.mainQ{
-    grid-area: main;
-    background-color: rgb(204,252,203);
-    
+.mainQ {
+  grid-area: main;
+  background-color: rgb(204, 252, 203);
 }
 
-.asideQ{
-    grid-area: aside;
-    margin-top: 10%;
+.asideQ {
+  grid-area: aside;
+  margin-top: 10%;
 }
 
-.articleQ{
-    grid-area: article;
-    background-color: rgb(194, 235, 193);
-    margin-top: 10%;
+.articleQ {
+  grid-area: article;
+  background-color: rgb(194, 235, 193);
+  margin-top: 10%;
 }
 
-.footerQ{
-    grid-area: footer;
-    
-    position:absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-
-
+.footerQ {
+  grid-area: footer;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 /** responsive tablet**/
-
-@media (min-width:768px){
-    .contenedorQS{
+@media (min-width: 768px) {
+  .contenedorQS {
     grid-template-columns: 70% 30%;
     grid-template-rows: 12% 18% 50% 10%;
-    grid-template-areas:
-    "header header"
-    "main main"
-    "article aside"
-    "footer footer";
-    }
-    
-
+    grid-template-areas: "header header" "main main" "article aside" "footer footer";
+  }
 }
-
-
-
 /** responsive desktop**/
-
-@media (min-width:1024px){
-
-    .contenedorQS{
-        
-        grid-template-columns: 70% 30%;
-        grid-template-rows: 20% 15% 45% 10%;
-        grid-template-areas:
-        "header header"
-        "main main"
-        "article aside"
-        "footer footer";
-        }
-        
-    
-
+@media (min-width: 1024px) {
+  .contenedorQS {
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 20% 15% 45% 10%;
+    grid-template-areas: "header header" "main main" "article aside" "footer footer";
+  }
+}
+.hamburguesa {
+  margin-left: 10px;
 }
 
-.hamburguesa{
-    margin-left: 10px;
-}
+/*# sourceMappingURL=styles.css.map */

@@ -128,11 +128,12 @@ p{
     margin-left: 2%;
 }
 
+
 .fotoBio{
     width: 200px; 
     height: 300px; 
     margin-top: 0%;
-    margin-left: 10%;
+    margin-left: 40%;
     
 }
 
@@ -228,10 +229,15 @@ form{
         color: black;
     }
 
+    /*MIXIN*/
+    @mixin tamanoFotos ($ancho, $alto) {
+        height: $alto;
+        width: $ancho;
+        
+    }
 
 .card__img{
-    width: 5cm;
-    height:5cm;
+    @include tamanoFotos(200px,200px );
     display: block;
     margin: 0 auto;
 
@@ -267,6 +273,11 @@ form{
     background-color: rgb(186, 218, 186);
 
 }
+ /*EXTEND*/
+.boton_plan28{
+    @extend .card__button;
+    margin-top: 40px;
+  }
 
 .cajaCards{
     display: flex;

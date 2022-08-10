@@ -111,7 +111,7 @@ p {
   width: 200px;
   height: 300px;
   margin-top: 0%;
-  margin-left: 10%;
+  margin-left: 40%;
 }
 
 /** Recetario**/
@@ -200,9 +200,10 @@ form {
   color: black;
 }
 
+/*MIXIN*/
 .card__img {
-  width: 5cm;
-  height: 5cm;
+  height: 200px;
+  width: 200px;
   display: block;
   margin: 0 auto;
 }
@@ -222,7 +223,7 @@ form {
   text-align: center;
 }
 
-.card__button {
+.card__button, .boton_plan28 {
   color: black;
   font-family: "Comfortaa";
   font-size: 20px;
@@ -230,6 +231,11 @@ form {
   margin: 0 auto;
   text-align: center;
   background-color: rgb(186, 218, 186);
+}
+
+/*EXTEND*/
+.boton_plan28 {
+  margin-top: 40px;
 }
 
 .cajaCards {
